@@ -12,8 +12,12 @@
 #Final Solution:
 enjoys = ["laughing", "gaming", "anime", "singing", "traveling", "outdoors"]
 
-enjoys.select {|enjoy| puts if enjoy.include?('ing')}
-   
+enjoys.each do |enjoy|
+    if enjoy.include?('ing') == true
+        puts enjoy
+    end
+end
+
 # Return:
 # => laughing
 # => gaming
