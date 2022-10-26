@@ -9,14 +9,25 @@
 # .start_with?()
 
 #Final Solution:
-aspects = ["aer", "aqua", "ignis", "terra", "ordo", "perditio", "ira", "lux"]
+aspects = [
+    {
+        primal: ["aer", "ignis", "ordo", "perditio", "terra", "aqua"],
+        compound: ["terra + aqua = vitium"],
+        tertiary: []
+}
 
-aspects.each do |aspect|
-    if aspect.start_with?('t')
-        puts aspect 
-    end
+aspects.each do |hash|
+    puts hash[:compound]
 end
-    
-    
+
+
+
+    # aspects.each do |aspect|
+#     if aspect.start_with?('t')
+#         puts aspect 
+#     end
+# end
+
+
 # Return:
 # => terra
